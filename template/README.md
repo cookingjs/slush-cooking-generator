@@ -1,16 +1,7 @@
 # <%= name %>
 > <%= description %>
 
-# Development
-
+## Quick Start
 ```shell
-make dev
+cooking init <%= generator %>
 ```
-
-# Production
-```
-make dist
-```
-
-# License
-<%= license %>

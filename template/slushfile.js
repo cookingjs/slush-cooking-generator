@@ -10,13 +10,13 @@ gulp.task('default', function (done) {
     {
       type: 'input',
       name: 'name',
-      message: 'Give your generator a name',
+      message: 'Give your app a name',
       default: getNameProposal()
     },
     {
       type: 'input',
       name: 'description',
-      message: 'Give your generator a description',
+      message: 'Give your app a description',
       default: 'A vue project.'
     },
     {
@@ -45,13 +45,11 @@ gulp.task('default', function (done) {
   ],
   function (answers) {
     answers.github = answers.github.replace(/\/$/, '')
-    answers.generator = answers.name
 
     if (!answers.moveon) {
       return done()
     }
-
-    gulp.src(__dirname + '/template/*')
+    gulp.src(__dirname + '/template/**')
       .pipe(template(answers))
       .pipe(conflict('./'))
       .pipe(gulp.dest('./'))
@@ -70,8 +68,4 @@ function getNameProposal () {
   } catch (e) {
     return path.basename(process.cwd());
   }
-}
-
-function getGeneratorName (name) {
-  return name.replace(/^slush-cooking-/g, '')
 }

@@ -4,9 +4,7 @@
   "description": "<%= description %>",
   "private": true,
   "keywords": [
-    "<%= generator %>",
-    "cooking",
-    "slushgenerator"
+    ""
   ],
   "scripts": {
     "dev": "cooking watch",
@@ -21,5 +19,7 @@
     "url": "<%= github %>/issues"
   },<% } %><% if (author) { %>
   "author": "<%= author %>",<% } %>
-  "license": "<%= license %>"
+  "license": "<%= license %>",
+  "dependencies": {
+  }
 }
