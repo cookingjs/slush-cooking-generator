@@ -1,0 +1,23 @@
+{
+  "name": "slush-cooking-generator",
+  "version": "0.0.0",
+  "description": "cooking generator generator",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "cooking",
+    "slushgenerator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cookingjs/slush-cooking-generator.git"
+  },
+  "author": "qingwei-li <qingwei.li@ele.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cookingjs/slush-cooking-generator/issues"
+  },
+  "homepage": "https://github.com/cookingjs/slush-cooking-generator#readme"
+}
