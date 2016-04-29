@@ -17,7 +17,7 @@ gulp.task('default', function (done) {
       type: 'input',
       name: 'description',
       message: 'Give your generator a description',
-      default: 'A vue project.'
+      default: 'A cooking generator.'
     },
     {
       type: 'input',
@@ -44,7 +44,7 @@ gulp.task('default', function (done) {
     }
   ],
   function (answers) {
-    answers.github = answers.github.replace(/\/$/, '')
+    answers.github = answers.github.replace(/\/$/, '') + '/' + answers.name
     answers.generator = answers.name
 
     if (!answers.moveon) {
