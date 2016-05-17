@@ -14,4 +14,4 @@ cooking.set({
   extends: []
 })
 
-module.exports = cooking.resovle()
+module.exports = cooking.resolve()
