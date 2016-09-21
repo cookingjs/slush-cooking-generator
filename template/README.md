@@ -3,5 +3,5 @@
 
 ## Quick Start
 ```shell
-cooking init <%= generator %>
+cooking init <%= generator.replace(/^slush\-cooking\-/, '') %>
 ```
